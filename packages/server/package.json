@@ -6,7 +6,39 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "dependencies": { "@quaysync/core": "0.1.0" },
-  "scripts": { "build": "tsc -b" }
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@quaysync/core": "0.1.0"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "prepublishOnly": "tsc -b"
+  },
+  "author": "Abhay Bundela",
+  "keywords": [
+    "sync",
+    "cloudflare",
+    "d1",
+    "workers",
+    "local-first"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aby050/quaysync.git",
+    "directory": "packages/server"
+  },
+  "homepage": "https://github.com/aby050/quaysync#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
 }

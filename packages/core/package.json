@@ -6,7 +6,38 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
   "sideEffects": false,
-  "scripts": { "build": "tsc -b" }
+  "scripts": {
+    "build": "tsc -b",
+    "prepublishOnly": "tsc -b"
+  },
+  "author": "Abhay Bundela",
+  "keywords": [
+    "offline",
+    "sync",
+    "local-first",
+    "react-native",
+    "expo",
+    "crdt"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aby050/quaysync.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/aby050/quaysync#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
 }

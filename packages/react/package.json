@@ -6,8 +6,42 @@
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "dependencies": { "@quaysync/core": "0.1.0" },
-  "peerDependencies": { "react": ">=18" },
-  "scripts": { "build": "tsc -b" }
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@quaysync/core": "0.1.0"
+  },
+  "peerDependencies": {
+    "react": ">=18"
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "prepublishOnly": "tsc -b"
+  },
+  "author": "Abhay Bundela",
+  "keywords": [
+    "react",
+    "react-native",
+    "hooks",
+    "offline",
+    "sync"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aby050/quaysync.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/aby050/quaysync#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  }
 }
