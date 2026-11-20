@@ -89,3 +89,17 @@ npm run typecheck
 ```
 
 MIT licence.
+
+## Example app
+
+An Expo todo app in `examples/expo-todo` syncs through a local server.
+
+```bash
+npm run example:server
+```
+
+```bash
+npm run example
+```
+
+On web, open `?device=a` and `?device=b` to get two separate devices in one browser. On a real phone, set `EXPO_PUBLIC_SYNC_URL=http://<your-mac-ip>:8911/sync`.
