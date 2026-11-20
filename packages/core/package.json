@@ -1,0 +1,12 @@
+{
+  "name": "@quaysync/core",
+  "version": "0.1.0",
+  "description": "Local-first storage and sync engine for React Native and the web.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "sideEffects": false,
+  "scripts": { "build": "tsc -b" }
+}

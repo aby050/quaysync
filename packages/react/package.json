@@ -1,0 +1,13 @@
+{
+  "name": "@quaysync/react",
+  "version": "0.1.0",
+  "description": "React and React Native hooks for QuaySync.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": { "@quaysync/core": "0.1.0" },
+  "peerDependencies": { "react": ">=18" },
+  "scripts": { "build": "tsc -b" }
+}

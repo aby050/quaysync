@@ -1,0 +1,12 @@
+{
+  "name": "@quaysync/server",
+  "version": "0.1.0",
+  "description": "Reference sync server for QuaySync: Fetch-API handler with memory and Cloudflare D1 backends.",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "dependencies": { "@quaysync/core": "0.1.0" },
+  "scripts": { "build": "tsc -b" }
+}
